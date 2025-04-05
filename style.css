@@ -1,0 +1,65 @@
+/* Apply background color */
+body {
+    font-family: Arial, sans-serif;
+    background: url('/static/bg-image.jpg') no-repeat center center fixed;
+    background-size: cover;
+    background-color: #2C3E50; /* Dark blue fallback */
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    color: white;
+}
+
+/* Chat container */
+.container {
+    width: 50%;
+    margin: auto;
+    background: rgba(0, 0, 0, 0.8); /* Dark transparent background */
+    padding: 20px;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
+    margin-top: 50px;
+    border-radius: 10px;
+    animation: fadeIn 1s ease-in-out;
+}
+
+/* Chatbox */
+#chatbox {
+    max-height: 300px;
+    overflow-y: auto;
+    text-align: left;
+    padding: 10px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+/* Input field */
+input[type="text"] {
+    width: 80%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+}
+
+/* Send button */
+button {
+    background-color: #5cb85c;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background 0.3s ease;
+}
+
+button:hover {
+    background-color: #4cae4c;
+    transform: scale(1.05);
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
